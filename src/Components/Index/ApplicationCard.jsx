@@ -5,7 +5,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ApplicationForm from "./ApplicationForm";
 
-const Application = () => {
+const ApplicationCard = () => {
   return(
     <Container>
       <Row className="justify-content-center mt-2">
@@ -22,4 +22,4 @@ const Application = () => {
   );
 } 
 
-export default Application;
+export default ApplicationCard;

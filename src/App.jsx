@@ -1,16 +1,13 @@
 import React from 'react';
 import './App.css';
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Application from "./Components/ApplicationCard";
-import MainNavbar from "./Components/MainNavbar";
+import IndexPage from './Components/IndexPage';
+import BookPage from './Components/BookPage';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
-      <MainNavbar />
-      <Application />
+      <IndexPage />
     </>
   );
 }
