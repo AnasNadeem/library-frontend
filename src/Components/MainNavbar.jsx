@@ -3,23 +3,31 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavDropdown from "react-bootstrap/NavDropdown";
-import { Link } from "react-router-dom";
+import { LinkContainer } from "react-router-bootstrap";
+import Button from "react-bootstrap/Button";
 
 const MainNavbar = () => {
   return(
-    <Navbar bg="light" expand="lg">
+    <Navbar bg="dark" variant="dark" expand="lg">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <LinkContainer to="/">
+        <Navbar.Brand>Library Management System</Navbar.Brand>
+        </LinkContainer>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav>
-              <Link to="/">Home</Link>
-            </Nav>
-            <Nav>
-              <Link to="/book">Book</Link>
-            </Nav>
+          <LinkContainer to="/">
+            <Nav.Link>Home</Nav.Link>
+          </LinkContainer>
+          <LinkContainer to="/book">
+              <Nav.Link>Book </Nav.Link>
+          </LinkContainer>
           </Nav>
+          <div className="d-flex">
+            <LinkContainer to="/login">
+              <Button>Login</Button>
+              </LinkContainer>
+          </div>
         </Navbar.Collapse>
       </Container>
     </Navbar>

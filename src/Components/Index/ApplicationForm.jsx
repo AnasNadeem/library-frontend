@@ -2,6 +2,7 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 
 function ApplicationForm(){
   return(
@@ -50,6 +51,7 @@ function ApplicationForm(){
         <Form.Label>Date Of Birth</Form.Label>
         <Form.Control type="date" />
       </Form.Group>
+      <Button className="fullButton">Submit</Button>
     </Form>
   );
 }

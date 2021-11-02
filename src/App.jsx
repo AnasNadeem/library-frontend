@@ -3,6 +3,7 @@ import './App.css';
 import IndexPage from './Components/IndexPage';
 import BookPage from './Components/BookPage';
 import MainNavbar from './Components/MainNavbar';
+import LoginForm from './Components/LoginForm';
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path="/book">
           <BookPage />
+        </Route>
+        <Route path="/login">
+          <LoginForm />
         </Route>
       </Switch>
     </Router>
